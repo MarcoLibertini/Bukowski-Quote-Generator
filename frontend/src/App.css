@@ -1,0 +1,49 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Color de fondo por defecto */
+  transition: background-color 1s ease; /* Transición gradual del color de fondo */
+}
+
+.quote-box {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  min-height: 200px; /* Tamaño fijo para el recuadro */
+  transition: opacity 0.5s ease; /* Transición gradual para la visibilidad de las frases */
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.5s ease; /* Transición suave para el texto */
+}
+
+.fetch-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.fetch-button:hover {
+  background-color: #0056b3;
+}
