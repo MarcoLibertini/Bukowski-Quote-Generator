@@ -16,10 +16,10 @@ const App = () => {
       const newQuote = quotes[randomIndex];
       setQuote(newQuote); // Actualiza el estado con una frase aleatoria
 
-      // Cambiar el color de fondo y del texto
-      const randomColor = getRandomColor();
-      setBgColor(randomColor);
-      setTextColor(randomColor);
+      // Cambiar el color de fondo y del texto a un gradiente lineal
+      const randomGradient = getRandomGradient();
+      setBgColor(randomGradient);
+      setTextColor(getRandomColor()); // Mantén el texto de un solo color para la legibilidad
     } catch (error) {
       console.error('Error fetching quote:', error);
     }
@@ -35,13 +35,20 @@ const App = () => {
     return color;
   };
 
+  // Función para obtener un gradiente lineal aleatorio
+  const getRandomGradient = () => {
+    const color1 = getRandomColor();
+    const color2 = getRandomColor();
+    return `linear-gradient(45deg, ${color1}, ${color2})`;
+  };
+
   // Llama a fetchQuote cuando el componente se monte
   useEffect(() => {
     fetchQuote();
   }, []);
 
   useEffect(() => {
-    document.body.style.backgroundColor = bgColor;
+    document.body.style.background = bgColor;
   }, [bgColor]);
 
   return (
@@ -49,7 +56,7 @@ const App = () => {
       <h1 className="app-title">Bukowski-Quote-Generator</h1>
       <QuoteBox quote={quote} onNewQuote={fetchQuote} textColor={textColor} />
       <div className="linkedin-logo">
-        
+        {/* Aquí puedes agregar el logo de LinkedIn */}
       </div>
     </div>
   );

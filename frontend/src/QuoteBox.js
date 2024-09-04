@@ -18,7 +18,7 @@ const QuoteBox = ({ quote, onNewQuote, textColor }) => {
       <button className="fetch-button" onClick={onNewQuote}>
         Nueva Frase
       </button>
-      <a href="https://www.linkedin.com/in/marco-gabriel-libertini-955b00245/" target="https://www.linkedin.com/in/marco-gabriel-libertini-955b00245/" rel="noopener noreferrer" className="linkedin-logo">
+      <a href="https://www.linkedin.com/in/marcolibertini/" target="https://www.linkedin.com/in/marcolibertini/" rel="noopener noreferrer" className="linkedin-logo">
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" />
       </a>
     </div>
