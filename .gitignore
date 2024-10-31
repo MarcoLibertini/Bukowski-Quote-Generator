@@ -1,0 +1,44 @@
+# Node dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Python dependencies
+__pycache__/
+*.py[cod]
+*.egg-info/
+env/
+env.bak/
+*.sqlite3
+
+# Flask environment files
+instance/
+.env
+env/
+
+# Build outputs
+/build
+/dist
+/coverage
+
+# IDE/editor configs
+.idea/
+.vscode/
+*.swp
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and debugging files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
